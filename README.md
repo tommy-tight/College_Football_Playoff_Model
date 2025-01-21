@@ -1,4 +1,5 @@
 # College Football Playoff Predictive Model 
+This is my submission to the Notre Dame Football Analytics Club College Football Playoffs Model Competition. 
 
 ## Data
 In order to make this model, I used college football data from the [College Football Data API](https://api.collegefootballdata.com/api/docs/?url=/api-docs.json). The Data that was prepared by [@grantexley](https://github.com/grantexley) and can be found in [his college football model repository](https://github.com/grantexley/college_football_model). The data gathered was very large so the first thing I did was clean the data and perform variable selection. To perform variable selection, I wanted to remove variables that were highly correlated with each other to account for and eliminate the possibility of multicollinearity. However, after taking this approach there were still too many variables remaining in the data. To perform further variable selection, I ran a simple XGBoost model that returned the top 20 features to use in my model. 
